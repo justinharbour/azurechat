@@ -27,12 +27,12 @@ export const LogIn: FC<LoginProps> = (props) => {
           <span className="text-primary">{AI_NAME}</span>
         </CardTitle>
         <CardDescription>
-          This model is hosted in the Loyal Source Commercial Cloud. Do not use this page in the GCC environment.
+          This model is hosted in the Loyal Source Commercial Cloud.
+          Please be advised that your activities within LoyalGPT are subject to monitoring and surveillance and the employee handbook. By logging in, you consent to the collection and analysis of your interactions for security and operational purposes. Unauthorized access or misuse may lead to legal consequences. Proceeding beyond this point indicates your acceptance of these terms.
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
-        <Button onClick={() => signIn("azure-ad")}> Sign in with your @loyalsource.com Account</Button>
-        <Button onClick={() => signIn("okta")}> Sign in with your Okta Account</Button>
+        <Button onClick={() => signIn("okta")}> Sign in with Okta </Button>
         {props.isDevMode ? (
           <Button onClick={() => signIn("localdev")}>
             Basic Auth (DEV ONLY)
