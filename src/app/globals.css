@@ -4,27 +4,28 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 136 80% 29%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 34 48% 65.5%;
-    --secondary-foreground: 35.5 34.3% 65.5%;
-    --muted: 34 48% 65.5%;
-    --muted-foreground: 35.5 34.3% 65.5%;
-    --accent: 34 48% 65.5%;
-    --accent-foreground: 35.5 34.3% 65.5%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --background: #fff;
+    --foreground: #a98a58;
+    --card: #a98a58;
+    --card-foreground: #fff;
+    --popover: #a98a58;
+    --popover-foreground: #000000;
+    --primary: #fff;
+    --primary-foreground: #fff;
+    --secondary: #a98a58;
+    --secondary-foreground: #000000;
+    --muted: #a98a58;
+    --muted-foreground: #000000;
+    --accent: #a98a58;
+    --accent-foreground: #000;
+    --destructive: #000000; /* No accent color provided, using black */
+    --destructive-foreground: #a98a58; /* Accent color for foreground */
+    --border: #a98a58; /* No accent color provided, using black */
+    --input: #000000; /* No accent color provided, using black */
+    --ring: #a98a58;
     --radius: 0.5rem;
   }
+}
 
   .dark {
     --background: 222.2 84% 4.9%;
