@@ -27,7 +27,7 @@ export const LogIn: FC<LoginProps> = (props) => {
           <span className="text-primary">{AI_NAME}</span>
         </CardTitle>
         <CardDescription>
-          Login in with your Loyal Source-Issued Employee Account
+          This model is hosted in the Loyal Source Commercial Cloud. Do not use this page in the GCC environment.
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
