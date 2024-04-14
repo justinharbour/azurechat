@@ -33,12 +33,15 @@ export const LogIn: FC<LoginProps> = (props) => {
       </CardHeader>
       <CardContent className="grid gap-4">
         <Button onClick={() => signIn("okta")}> Sign in with Okta </Button>
+        <Button component="a" href="https://docs.chat.loyalsource.com" target="_blank" rel="noopener noreferrer">
+          View End-User Documentation
+        </Button>
         <Button onClick={() => signIn("azure-ad")}> Sign in as Admin </Button>
 
         {props.isDevMode ? (
-          <Button onClick={() => signIn("localdev")}>
-            Basic Auth (DEV ONLY)
-          </Button>
+            <Button onClick={() => signIn("localdev")}>
+              Basic Auth (DEV ONLY)
+            </Button>
         ) : null}
       </CardContent>
     </Card>
